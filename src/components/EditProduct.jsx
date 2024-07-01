@@ -189,11 +189,7 @@ const EditProduct = () => {
         />
         <button type="submit"> O'zgartirish </button>
       </form>
-      <Link
-        to={"/home"}
-        className="linker_home"
-        style={{ marginTop: "70px" }}
-      >
+      <Link to={"/home"} className="linker_home" style={{ marginTop: "70px" }}>
         Asosiy menu
       </Link>
     </>

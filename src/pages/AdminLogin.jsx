@@ -18,9 +18,12 @@ function Login() {
       title: "Oops...",
       text: "Incorrect username or password!",
     });
-  }  
+  }
 
   const handleSubmit = (e) => {
+    console.log("username", ADMIN_USERNAME);
+    console.log("password", ADMIN_PASSWORD);
+
     e.preventDefault();
     if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
       localStorage.setItem("isAdmin", true);

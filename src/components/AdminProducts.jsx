@@ -113,6 +113,10 @@ export default function AdminProducts() {
     });
   };
 
+  const redirectToBot = () => {
+    window.location = "/bot";
+  };
+
   function RenderProduct({ products }) {
     if (products.length > 0) {
       return products.map((product) => (
@@ -209,6 +213,18 @@ export default function AdminProducts() {
             onClick={updateCurrency}
           >
             Change Currency
+          </button>
+          <button
+            className="linker"
+            style={{
+              width: "190px",
+              height: "54px",
+              border: "none",
+              fontSize: "17px",
+            }}
+            onClick={redirectToBot}
+          >
+            Bot
           </button>
         </div>
       </div>
