@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
-import "./BotHome.css";
+import "./LocationsHome.css";
 
-export function BotHome() {
+export function LocationsHome() {
   const [locations, setLocations] = useState([]);
   const API_URL = process.env.REACT_APP_API_URL;
 

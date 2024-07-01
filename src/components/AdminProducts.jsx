@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import queryString from "query-string";
 
 import axios from "axios";
@@ -10,6 +10,7 @@ const API_URL = process.env.REACT_APP_API_URL;
 
 export default function AdminProducts() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const { username, userContact } = queryString.parse(location.search);
 
@@ -114,7 +115,7 @@ export default function AdminProducts() {
   };
 
   const redirectToBot = () => {
-    window.location = "/bot";
+    navigate("/places");
   };
 
   function RenderProduct({ products }) {
