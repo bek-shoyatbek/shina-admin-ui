@@ -36,6 +36,7 @@ export function LocationsHome() {
     });
 
     if (formValues) {
+      console.log("formValues", formValues);
       try {
         const response = await fetch(`${API_URL}/locations/create`, {
           method: "POST",
@@ -70,7 +71,7 @@ export function LocationsHome() {
         const response = await fetch(
           `${API_URL}/locations/update/${location._id}`,
           {
-            method: "PUT",
+            method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formValues),
           }
