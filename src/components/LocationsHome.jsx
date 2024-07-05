@@ -27,11 +27,13 @@ export function LocationsHome() {
       title: "Add New Location",
       html:
         '<input id="name" class="swal2-input" placeholder="Name">' +
-        '<input id="link" class="swal2-input" placeholder="Link">',
+        '<input id="link" class="swal2-input" placeholder="Link">' +
+        '<input id="region" class="swal2-input" placeholder="Region">',
       focusConfirm: false,
       preConfirm: () => ({
         name: document.getElementById("name").value,
         link: document.getElementById("link").value,
+        region: document.getElementById("region").value,
       }),
     });
 
@@ -58,11 +60,13 @@ export function LocationsHome() {
       title: "Edit Location",
       html:
         `<input id="name" class="swal2-input" placeholder="Name" value="${location.name}">` +
-        `<input id="link" class="swal2-input" placeholder="Link" value="${location.link}">`,
+        `<input id="link" class="swal2-input" placeholder="Link" value="${location.link}">` +
+        `<input id="region" class="swal2-input" placeholder="Region" value="${location.region}">`,
       focusConfirm: false,
       preConfirm: () => ({
         name: document.getElementById("name").value,
         link: document.getElementById("link").value,
+        region: document.getElementById("region").value,
       }),
     });
 
