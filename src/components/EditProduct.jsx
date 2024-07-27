@@ -119,21 +119,18 @@ const EditProduct = () => {
         />
         <input
           name="percent_3m"
-          type="number"
           value={product.percent_3m}
           onChange={handleChange}
           placeholder="3 oy ga "
         />
         <input
           name="percent_6m"
-          type="number"
           value={product.percent_6m}
           onChange={handleChange}
           placeholder="6 oy ga "
         />
         <input
           name="percent_9m"
-          type="number"
           value={product.percent_9m}
           onChange={handleChange}
           placeholder="9 oy ga "
@@ -141,7 +138,6 @@ const EditProduct = () => {
 
         <input
           name="quantity"
-          type="number"
           value={product.quantity}
           onChange={handleChange}
           placeholder="Soni "
@@ -154,14 +150,12 @@ const EditProduct = () => {
         />
         <input
           name="percent_cash"
-          type="number"
           value={product.percent_cash}
           onChange={handleChange}
           placeholder="Naqtga"
         />
         <input
           name="diameter"
-          type="number"
           value={product.diameter}
           onChange={handleChange}
           placeholder="Diametri "
@@ -176,7 +170,6 @@ const EditProduct = () => {
 
         <input
           name="width"
-          type="number"
           value={product.width}
           onChange={handleChange}
           placeholder="Uzunligi"
